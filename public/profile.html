@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#3E318C]">
+     
+    <nav class="flex justify-between items-center p-4 bg-white">
+        <p><a class=" font-bold text-2xl text-[#30B8C6]" href="student.html">Traitz Tech</a></p> 
+        <ul class="hidden md:flex md:gap-8  md:justify-center items-center ">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="student.html">My Learning</a></li>
+        </ul> 
+        <!-- <div>
+            <input class="border bg-slate-50 rounded-3xl p-2 " type="text" placeholder="search">
+            <i class="fa fa-search absolute right-[90px] top-7 md:right-[30px]" aria-hidden="true"></i>
+        </div> -->
+        <i class="fa fa-bars  md:hidden" aria-hidden="false"></i>
+        <ul id="menu" dropdown# class="md:hidden flex flex-col gap-6 hidden pl-2">
+          <li class="flex gap-2 justify-center items-center">
+              <div class="bg-black rounded-full w-[50px] h-[50px] border py-auto "><P class="text-white text-center text-3xl">NS</P></div>
+              <p><a href="profile.html"></a>Ngwa Sirri </p>
+          </li>
+          <li><a href="instructor.html">Switch to Tutor Dashboard</a></li>
+          <li><a href="student.html">My Learning</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Help</a></li>
+          <button><a href="index.html">Log Out</a></button>
+        </ul>
+    </nav>  
+      <!-- main -->
+    <section class="flex gap-5 justify-center items-center">
+         <!-- <p><a class="text-white font-bold text-[20px] text-center hover:text-[#42B6C5]" href="student.html ">Traitz Tech </a></p> -->
+         <img class="w-[90px] rounded-full" src="images/pexels-pixabay-415829.jpg" alt="">
+         <div class="my-2"> 
+             <p class="text-white font-bold text-2xl">Ngwa Sirri Lum</p>
+             <p class="text-white">sirri8ngwa@gmail.com</p>
+             <div class="flex gap-3 justify-start  items-start">
+                <img src="images/profile.webp" alt="">
+                 <p class="text-white my-3 p-2 text-center"> User</p>
+                 <!-- <p><a class=" text-[#42B6C5]" href="edit.html">Edit Profile</a></p> -->
+             </div>
+        </div>
+    </section>
+
+
+        <section class="  border-gray-300 shadow-2xl rounded-md ">
+            <div>
+            
+                 
+                <div class="flex flex-col md:flex-row justify-center gap-[40px] items-center">
+                    <div class="bg-[#30B8C6] p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">5</p>
+                        <p class=" text-2xl mb-3 text-center">Courses Enrolled</p>
+                    </div>
+                    <div class="bg-white p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">3</p>
+                        <p class=" text-2xl mb-2 text-center">Courses in Progress</p>
+                    </div>
+                    <div class="bg-[#30B8C6] p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">2</p>
+                        <p class=" text-2xl mb-2 text-center">Finished Courses </p>
+                    </div>
+                </div>
+                
+            </div> 
+        </section>
+    <!-- footer -->
+
+    <footer class=" bg-white p-4" >
+        <p class="text-center font-bold  text-white">Our mission is to develop our community with technology</p>
+        <div class="grid md:grid-cols-3 justify-center items-center">
+            <ul class="my-3">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="courses.html">Courses</a></li>
+                <li><a  href="instructor">Tutor Dashboard</a></li>
+            </ul>
+            <ul class="my-3">
+                <li><a  href="">WhatsApp</a></li>
+                <li><a  href="">Facebook</a></li>
+                <li><a  href="">LinkedIN</a></li>
+                <li><a  href="">Instagram</a></li>
+            </ul>
+            <div class="my-3">
+                <p >Traitz Tech</p>
+                <p >Bambili, Bamenda, Cameroon</p>
+                <p><a class="text-purple-500" href="https://traitz.tech/"> Our main website</a></p>
+            </div>
+        </div>
+        <p  class="text-center font-serif bg-[#42b6c5] p-3">Traitz Tech &copy;2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

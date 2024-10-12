@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traitz Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    #active {
+       color: #3E318C; 
+       color: #42B6C5;
+    }
+    @media(max-width:768px) {        
+        .active{
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            position: absolute;
+            padding:10px;
+            gap: 10px;
+            top: 80px;
+            left: 0;
+            width: 40%;
+            height: 90vh;
+            background: white;
+            /* border-radius: 15px; */
+        }
+    }
+    @media(min-width:768px){
+        .fa-bars{
+            display: none;
+        }
+    }
+</style>
+<body class="bg-[#3E318C]">
+    <!-- nav-bar -->
+
+    <nav  class="bg-white flex justify-between px-4 border-b border-gray-300 shadow-2xl">
+        <div class="flex flex-row justify-center items-center">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <div>
+                <ul class="hidden md:flex md:gap-8 md:justify-center md:items-center">
+                    <li><a id="active" class="text-xl hover:text-[#42B6C5]" href="index.html">Home</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5]" href="courses.html">Courses</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5]" href="instructor.html">Tutor Dashboard</a></li>
+                </ul>
+            </div>
+            
+            <!-- <img class="w-6" src="WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt=""> -->
+             
+                <ul id="menu" class=" hidden md:hidden ">
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html">Sign up</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="login.html">Log in</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="courses.html">Courses</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="instructor.html"> Tutor Dashboard</a></li>
+                </ul>
+             
+             
+        </div>
+        <div class="flex justify-center w-20 py-3">
+            <img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt="">
+            <!-- <p class="text-center font-bold">Traitz Tech</p> -->
+        </div>
+        <div class="flex gap-3">
+            <svg class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    
+                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <div class=""></div>
+        
+            <div class="hidden gap-3 py-5 md:block">
+                <button class="border bg-white text-black p-3 rounded-sm"><a href="signup.html">Sign Up</a></button>         
+                <button class="border bg-black text-white p-3 rounded-sm"><a href="login.html">Log in</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <section class=" p-2">
+        <div class="bg-[url(/images/index bg.jpg)]">
+           <h2 class="font-bold text-[38px] my-4 text-center md:text-[70px] text-white">Unlock your potential with Traitz Tech Learning Hub</h2>
+           <p class="text-white text-[20px] font-serif md:text-[20px] mx-[10%] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam sit vero hic repellat veritatis doloribus et omnis explicabo. Dolores pariatur totam numquam suscipit aliquam sed veniam, quae error doloremque.</p>
+           <button class="bg-[#42B6C5] my-3 p-4 rounded-[10px] md:mx-[42%] mx-[30%]"><a class="text-xl font-bold" href="courses.htmlhj">Get Started</a></button>
+        </div>
+    </section>
+
+    
+
+<!-- featured courses -->
+
+    <section class=" my-5 p-3">
+        <div class="md:flex md:flex-row md:justify-between items-center px-4">
+            <div class="md:w-[30%] md: border-gray-300 shadow-2xl md:p-5 ">
+                <h1 class="font-serif font-bold text-3xl my-2 text-white ">Popular Courses</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, nihil! Iste tempore eius deleniti iusto.</p>
+                <button class=" p-3 my-4 bg-[#42b6c5] font-bold"><a href="courses.html">Explore All</a></button>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 md:w-[60%] gap-3">
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <p class="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>
+                    </div>
+                </div>
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <p class="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>                   
+                     </div>
+                </div>
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <p class="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>                    </div>
+                </div>
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <p class="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>                    </div>
+                </div>
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <p class="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>                    </div>
+                </div>
+                <div class=" bg-[#4838a0]  rounded-lg shadow-md   ">
+                    <img class="rounded-lg" src="images/image.png" alt="">
+                    <div class="px-2">
+                        <P class="font-serif text-white font-bold ">Tailwind CSS for Beginners</P>
+                        <p class="text-white">Instructor: </p>
+                        <pclass="text-white" >duration: 4.5 Hrs </p>
+                        <p class="text-white">cost: 5000XAF</p>
+                        <button class="py-1 px-4 rounded-md bg hover:bg-[#42b6c5]  bg-[#2acde3] my-2"  ><a class="font-bold" href="#">Enroll Now</a></button>                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+
+
+    <!--  footer  -->
+
+    <footer class=" bg-white p-4" >
+        <p class="text-center font-bold  text-white">Our mission is to develop our community with technology</p>
+        <div class="grid md:grid-cols-3 justify-center items-center">
+            <ul class="my-3">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="courses.html">Courses</a></li>
+                <li><a  href="instructor">Tutor Dashboard</a></li>
+            </ul>
+            <ul class="my-3">
+                <li><a  href="">WhatsApp</a></li>
+                <li><a  href="">Facebook</a></li>
+                <li><a  href="">LinkedIN</a></li>
+                <li><a  href="">Instagram</a></li>
+            </ul>
+            <div class="my-3">
+                <p >Traitz Tech</p>
+                <p >Bambili, Bamenda, Cameroon</p>
+                <p><a class="text-purple-500" href="https://traitz.tech/"> Our main website</a></p>
+            </div>
+        </div>
+        <p  class="text-center font-serif bg-[#42b6c5] p-3">Traitz Tech &copy;2024</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

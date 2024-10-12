@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js">
+</head>
+<style>
+    @media(max-width:768px) {        
+       .active{
+           /* display: flex; */
+           /* flex-direction: column; */
+           /* align-items: self-start; */
+           position: absolute;
+           /* gap: 10px; */
+           display: block;
+           top: 72px;
+           left: 0;
+           width: 50%;
+           height: 100vh;
+           /* background: white; */
+           /* padding: 5px; */
+       }
+       .menu.active:nth-child(even){
+           background: rgb(160, 160, 160);
+       }
+   }
+  @media(min-width:768px){
+       .fa-bars{
+           display: none;
+       }
+   }
+</style>
+<body>
+    <nav class="flex justify-between items-center px-3 py-1 border-gray-300 shadow-2xl" >
+       <img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt="">
+       <div class="relative">
+        <input class="border bg-slate-50 rounded-3xl p-2 " type="text" placeholder="search">
+          <i class="fa fa-search absolute right-[40px] top-3 md:right-[25px]" aria-hidden="true"></i>
+       </div> 
+       <div>
+            <img class="w-8 rounded-full" src="images/avatar.webp" alt="">
+        </div>
+    <i class="fa fa-bars md:hidden" aria-hidden="false"></i>
+    </nav>
+    <!-- main -->
+    <section class="flex h-[100vh] ">
+        <!-- menu -->
+        <section id="menu" class="hidden md:block w-[20%] pl-4 bg-white  border-gray-300 shadow-2xl overflow-scroll">
+            <p>menu</p>
+            <div class="flex gap-2 py-3 ">
+                <img class="w-5 " src="images/home.webp" alt="">
+                <p><a href="index.html">Home</a></p>
+            </div>
+            <div class="flex gap-2 py-3 ">
+                <img class="w-5" src="images/message.webp" alt="">
+                <p><a href="student.html">Messages</a></p>
+            </div>
+            <div class="flex gap-2 py-3 ">
+                <img class="w-5" src="images/profile.webp" alt="">
+                <p><a href="profile.html">Profile</a></p>
+            </div>
+            <div class="flex gap-2 py-3 ">
+                <img class="w-5" src="images/setting.webp" alt="">
+                <p><a href="student.html">Settings</a></p>
+            </div>
+            <div class="flex gap-2 py-3 ">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                <p>light Mode</p>
+            </div>
+        </section>
+        <section class="md:w-[80%] flex overflow-scroll ">
+            <div class="md:w-[80%]  bg-[#4838a0] overflow-scroll" >
+                <div class="flex flex-col md:flex-row justify-center gap-[40px] items-center">
+                    <div class="bg-[#30B8C6] p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">5</p>
+                        <p class=" text-2xl mb-3 text-center">Courses Enrolled</p>
+                    </div>
+                    <div class="bg-white p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">3</p>
+                        <p class=" text-2xl mb-2 text-center">Courses in Progress</p>
+                    </div>
+                    <div class="bg-[#30B8C6] p-4 border-gray-300 shadow-2xl rounded-md my-6">
+                        <p class="font-bold text-2xl mb-4 text-center">2</p>
+                        <p class=" text-2xl mb-2 text-center">Finished Courses </p>
+                    </div>
+                </div>
+
+                <h2 class="text-white font-bold text-2xl text-center mt-10">Enrolled Courses</h2>
+
+                <div class="flex flex-col md:flex-row gap-12 p-12 ">
+                    <div class=" rounded-md  bg-slate-300">
+                        <!-- <video class="h-[180px] w-[100%]" controls> <source src = "vidoes/Build_A_Responsive_Multipage_Education_School_Website_using_HTML_CSS___JavaScript_Complete_Tutorial(720p).mp4" type="video/mp4"></video>  -->
+                        <img class="rounded-lg" src="images/image.png" alt="">
+                        <div class="p-3">
+                            <h3 class="text-start font-bold text-[20px] my-1">Responsive Multipage website </h3>
+                            <!-- <p class="my-2 "> <span class="font-semibold">Instructor:</span>Foryoung Junoir</p> -->
+                            <p class="my-2 "><span class="font-semibold">duration:</span>22h 30mins</p> 
+                            <button class="bg-[#30B8C6] p-1 rounded-md"><a class="text-white" href="coursedetals.html">Get started</a></button>  
+                        </div>                    
+                    </div>
+                    <div class=" rounded-md bg-slate-300">
+                        <!-- <video class="h-[180px] w-[100%]" controls> <source src = "vidoes/Build_A_Responsive_Multipage_Education_School_Website_using_HTML_CSS___JavaScript_Complete_Tutorial(720p).mp4" type="video/mp4"></video>  -->
+                        <img class="rounded-lg" src="images/image.png" alt="">
+                        <div class="p-3">
+                            <h3 class="text-start font-bold text-[20px] my-1">Responsive Multipage website</h3>
+                            <!-- <p class="my-2 "> <span class="font-semibold">Instructor:</span>Foryoung Junoir</p> -->
+                            <p class="my-2 "><span class="font-semibold">duration:</span>22h 30mins</p> 
+                            <button class="bg-[#30B8C6] p-1 rounded-md"><a class="text-white" href="coursedetals.html">Get started</a></button>  
+                        </div>                    
+                    </div>
+                    <div class=" rounded-md  bg-slate-300">
+                        <!-- <video class="h-[180px] w-[100%]" controls> <source src = "vidoes/Build_A_Responsive_Multipage_Education_School_Website_using_HTML_CSS___JavaScript_Complete_Tutorial(720p).mp4" type="video/mp4"></video>  -->
+                        <img class="rounded-lg" src="images/image.png" alt="">
+                        <div class="p-3">
+                            <h3 class="text-start font-bold text-[19px] my-1">Responsive Multipage website</h3>
+                            <!-- <p class="my-2 "> <span class="font-semibold">Instructor:</span>Foryoung Junoir</p> -->
+                            <p class="my-2 "><span class="font-semibold">duration:</span>22h 30mins</p> 
+                            <button class="bg-[#30B8C6] p-1 rounded-md"><a class="text-white" href="coursedetals.html">Get started</a></button>  
+                        </div>                    
+                    </div>     
+                </div>
+                <section>
+                    <h1 class="font-bold text-white text-4xl ml-[10%] mb-7 text-center">Related Search</h1>
+                    <div class="flex justify-between items-center mx-[12%] my-2">
+                        <h2  class="font-bold text-white text-xl " >Our top picks for you</h2>
+                        <button><a class=" text-white bg-orange-700 hover:text-blue-600 p-2" href="courses.html">Browse Courses</a></button>
+                    </div>
+            
+                    <div >
+                        <div class="flex flex-col md:flex-row gap-5 mx-[12%]  bg-slate-300 my-5">
+                            <!-- <video class="h-[200px]" controls><source src="vidoes/Learn_JavaScript_-_Full_Course_for_Beginners(480p).mp4" type="video/mp4"></video> -->
+                            <img class="rounded-lg" src="images/image.png" alt="">
+                            <div class="p-2">
+                                <h2 class="font-bold text-xl mb-1">Full JavaScript Course for Beginners</h2>
+                                <P>By: Brandon Smith</P>
+                                <!-- <p>updated: sept 2024 time: 3h 45mins</p> -->
+                                <p class="font-bold ">Price $8.7</p>
+                                <button class="py-1 px-4 font-bold bg-[#42B6C5] text-xl rounded-md">Add To Cart</button>
+            
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-5 mx-[12%]  bg-slate-300 my-5">
+                            <!-- <video class="h-[200px]" controls><source src="vidoes/Learn_JavaScript_-_Full_Course_for_Beginners(480p).mp4" type="video/mp4"></video> -->
+                            <img class="rounded-lg" src="images/image.png" alt="">
+                            <div class="p-2">
+                                <h2 class="font-bold text-xl mb-1">Full JavaScript Course for Beginners</h2>
+                                <P>By: Brandon Smith</P>
+                                <!-- <p>updated: sept 2024 time: 3h 45mins</p> -->
+                                <p class="font-bold ">Price $8.7</p>
+                                <button class="py-1 font-bold px-4 bg-[#42B6C5] text-xl rounded-md">Add To Cart</button>
+            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <div>
+                    <h2 class="font-bold text-white" >Progress Chart</h2>
+                    <div>
+                        <canvas id="myChart" class="h-[400px] w-[300px]"></canvas>
+                    </div>                      
+                </div> -->
+        
+                <div class="bg-white p-5 rounded-md mx-5">
+                   <h2 class="font-bold">Recently Accessed</h2>
+                   <p>Today
+                       <ul class="list-disc ml-10">
+                           <li>React Crash Course</li>
+                       </ul>
+                   </p>
+                   <p>Yesterday
+                       <ul class="list-disc ml-10">
+                           <li>Media Queries Crash Course</li>
+                       </ul>
+                   </p>
+                   <p >Older
+                       <ul class="list-disc ml-10">
+                           <li>React Crash Course</li>
+                           <li>React Crash Course</li>
+                           <li>React Crash Course</li>
+                       </ul>
+                   </p>
+                </div>
+            </div>
+            <!-- announcements -->
+            <div class="hidden md:block md:w-[20%] md:border-gray-300 md:shadow-2xl bg-white p-1 ">
+                <h2 class="font-semibold my-2 text-center">Announcements</h2>
+                <div class="border hover:border-black p-2 rounded-md mb-2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-semibold">Lorem,ipsum</h2>
+                        <p class="text-[10px]">27-09-2024</p>
+                    </div>
+                    <p class="text-[13px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque harum beatae voluptatem architecto?</p>
+                </div>
+                <div class="border hover:border-black p-2 rounded-md m2">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-semibold">Lorem,ipsum</h2>
+                        <p class="text-[10px]">27-09-2024</p>
+                    </div>
+                    <p class="text-[13px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

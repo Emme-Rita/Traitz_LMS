@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tutor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+  @media(max-width:768px) {        
+     .active{
+         /* display: flex; */
+         /* flex-direction: column; */
+         /* align-items: self-start; */
+         position: absolute;
+         /* gap: 10px; */
+         display: block;
+         top: 72px;
+         left: 0;
+         width: 50%;
+         height: 100vh;
+         /* background: white; */
+         /* padding: 5px; */
+     }
+     .menu.active:nth-child(even){
+         background: rgb(160, 160, 160);
+     }
+ }
+@media(min-width:768px){
+     .fa-bars{
+         display: none;
+     }
+ }
+</style>
+<body>
+    <nav class="flex justify-between items-center px-3 py-1 border-gray-300 shadow-2xl" >
+      	<img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt="">
+      	<div class="relative">
+        	<input class="border bg-slate-50 rounded-3xl p-2 " type="text" placeholder="search">
+        	<i class="fa fa-search absolute right-[40px] md:right-[90px] top-3" aria-hidden="true"></i>
+    	</div> 
+    	<div>
+      		<img class="w-8 rounded-full" src="images/avatar.webp" alt="">
+    	</div>
+  		<i class="fa fa-bars md:hidden" aria-hidden="false"></i>
+ 	</nav>
+
+	<section>	
+		<section id="menu" class="hidden md:block w-[20%] pl-4 bg-white  border-gray-300 shadow-2xl overflow-scroll">
+			<p>menu</p>
+			<div class="flex gap-2 py-3 ">
+				<img class="w-5 " src="images/home.webp" alt="">
+				<p><a href="index.html">Home</a></p>
+			</div>
+			<div class="flex gap-2 py-3 ">
+				<img class="w-5" src="images/message.webp" alt="">
+				<p><a href="student.html">Messages</a></p>
+			</div>
+			<div class="flex gap-2 py-3 ">
+				<img class="w-5" src="images/profile.webp" alt="">
+				<p><a href="student.html">Profile</a></p>
+			</div>
+			<div class="flex gap-2 py-3 ">
+				<img class="w-5" src="images/setting.webp" alt="">
+				<p><a href="studentdashboard.html">Settings</a></p>
+			</div>
+			<div class="flex gap-2 py-3 ">
+				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+				<p>light Mode</p>
+			</div>
+		</section>
+		<section>
+			<div class="bg-[#42B6C5]">
+				<p>Number of Courses</p>
+				<p>3</p>
+			</div>
+		</section>
+	</section>
+</body>
+</html>
