@@ -70,6 +70,14 @@
                 
             </div> 
         </section>
+
+        <!-- chart -->
+
+        <div class="mx-[300px] my-[50px]">
+            <canvas id="myChart"></canvas>
+        </div>
+          
+        
     <!-- footer -->
 
     <footer class=" bg-white p-4" >
@@ -95,7 +103,47 @@
         </div>
         <p  class="text-center font-serif bg-[#42b6c5] p-3">Traitz Tech &copy;2024</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+//   let maxDataValue = Math.max(mostPositiveValue, options.suggestedMax);
+Chart.defaults.color = '#ffff';
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['CSS', 'HTML', 'JS', 'DJANGO', 'VUE ', 'React'],
+      datasets: [{
+        label: '# percentage completion',
+        data: [12, 95, 45, 20, 72, 5],
+        // backgroundColor: [
+        //     "gray"
+        // ],
+        color: "#ffff",
+       
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+            suggestedMax: 100,
+          beginAtZero: true,
+          grid:{
+            display: false
+          }
+        },
+        x:{
+            grid:{
+                display:false
+            }
+        }
+        
+      }
+      
+    }
+  });
+</script>
 </body>
 </html>

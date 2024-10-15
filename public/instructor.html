@@ -46,8 +46,8 @@
   		<i class="fa fa-bars md:hidden" aria-hidden="false"></i>
  	</nav>
 
-	<section>	
-		<section id="menu" class="hidden md:block w-[20%] pl-4 bg-white  border-gray-300 shadow-2xl overflow-scroll">
+	<section class="flex">	
+		<div id="menu" class="hidden md:block pl-4 bg-white border-gray-300 shadow-2xl overflow-scroll h-[100vh]">
 			<p>menu</p>
 			<div class="flex gap-2 py-3 ">
 				<img class="w-5 " src="images/home.webp" alt="">
@@ -69,13 +69,55 @@
 				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
 				<p>light Mode</p>
 			</div>
-		</section>
-		<section>
-			<div class="bg-[#42B6C5]">
-				<p>Number of Courses</p>
-				<p>3</p>
+		</div>
+		<div>
+			<div class="flex gap-[20px] p-[40px]">
+				<div>
+					<canvas id="myChart" class="bg-red-200"></canvas>
+				</div>
+				<div class="w-[500px] h-[100px] bg-red-300"></div>
 			</div>
-		</section>
+
+
+			<div class="p-4">
+				<div class=""></div>
+			</div>
+		</div>
+		
 	</section>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+	<script>
+		const ctx = document.getElementById('myChart');
+		Chart.defaults.color = '#ffff';
+		labels = ['Jan', 'Feb', 'Mar', 'Apri', 'May', 'June']
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: labels,
+				datasets: [
+					{
+						label: 'My First Dataset',
+						data: [65, 59, 80, 81, 56, 55],
+						fill: false,
+						borderColor: 'rgb(75, 192, 192)',
+						tension: 0.1
+					},
+
+					{
+						label: 'My First Dataset',
+						data: [45, 29, 88, 81, 16, 15],
+						fill: false,
+						borderColor: 'rgb(34, 172, 192)',
+						tension: 0.1
+					}
+				]
+				
+			},
+ 		});
+		
+		
+	</script>
 </body>
 </html>

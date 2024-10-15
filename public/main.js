@@ -24,34 +24,34 @@ visibility.addEventListener("click", () =>{
     }
 })
 
-const ctx = document.getElementById('myChart');
+// const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['HTML', 'CSS', 'JS', 'REACT', 'VUE JS', 'GitHub'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['HTML', 'CSS', 'JS', 'REACT', 'VUE JS', 'GitHub'],
+//       datasets: [{
+//         label: '# of Votes',
+//         data: [12, 19, 3, 5, 2, 3],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+//   });
 
 
-// upload video
+// // upload video
 
-  document.getElementById("input").addEventListener("change", function(){
-    var media = URL.createObjectURL(this.files[0]);
-    var video = document.getElementById("video");
-    video.src = media
-    video.style.display = "block";
-    video.play();
-  });
+//   document.getElementById("input").addEventListener("change", function(){
+//     var media = URL.createObjectURL(this.files[0]);
+//     var video = document.getElementById("video");
+//     video.src = media
+//     video.style.display = "block";
+//     video.play();
+//   });
