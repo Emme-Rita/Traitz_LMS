@@ -33,55 +33,86 @@
      }
  }
 </style>
-<body>
-    <nav class="flex justify-between items-center px-3 py-1 border-gray-300 shadow-2xl" >
+<body class="bg-[#3E318C]">
+    <nav class="flex justify-between items-center px-3 py-1 bg-white border-gray-300 shadow-2xl" >
+		<i class="fa fa-bars md:hidden" aria-hidden="false"></i>
+		<p class=" hidden md:block font-serif text-[25px] text-[#42B6C5]">Menu</p>
       	<img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt="">
-      	<div class="relative">
+      	<!-- <div class="relative hidden md:block">
         	<input class="border bg-slate-50 rounded-3xl p-2 " type="text" placeholder="search">
         	<i class="fa fa-search absolute right-[40px] md:right-[90px] top-3" aria-hidden="true"></i>
-    	</div> 
+    	</div>  -->
     	<div>
       		<img class="w-8 rounded-full" src="images/avatar.webp" alt="">
     	</div>
-  		<i class="fa fa-bars md:hidden" aria-hidden="false"></i>
  	</nav>
 
-	<section class="flex">	
-		<div id="menu" class="hidden md:block pl-4 bg-white border-gray-300 shadow-2xl overflow-scroll h-[100vh]">
-			<p>menu</p>
+	<section class="flex ">	
+		<div id="menu" class="hidden md:block px-[10px] md:w-[20%] bg-white border-gray-300 shadow-2xl overflow-scroll h-[100vh]">
 			<div class="flex gap-2 py-3 ">
 				<img class="w-5 " src="images/home.webp" alt="">
 				<p><a href="index.html">Home</a></p>
 			</div>
 			<div class="flex gap-2 py-3 ">
+				<img class="w-5 " src="images/home.webp" alt="">
+				<p><a href="courses.html">Courses</a></p>
+			</div>
+			<div class="flex gap-2 py-3 ">
 				<img class="w-5" src="images/message.webp" alt="">
-				<p><a href="student.html">Messages</a></p>
+				<p><a href="">Messages</a></p>
 			</div>
 			<div class="flex gap-2 py-3 ">
 				<img class="w-5" src="images/profile.webp" alt="">
-				<p><a href="student.html">Profile</a></p>
+				<p><a href="profile.html">Profile</a></p>
 			</div>
 			<div class="flex gap-2 py-3 ">
 				<img class="w-5" src="images/setting.webp" alt="">
-				<p><a href="studentdashboard.html">Settings</a></p>
+				<p><a href="">Settings</a></p>
 			</div>
-			<div class="flex gap-2 py-3 ">
-				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-				<p>light Mode</p>
-			</div>
+
+
 		</div>
-		<div>
-			<div class="flex gap-[20px] p-[40px]">
-				<div>
-					<canvas id="myChart" class="bg-red-200"></canvas>
+		<div class="md:w-[80%] overflow-scroll h-[100vh]">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-[70px] p-[40px] justify-center">
+				<div class="">
+					<canvas id="myChart" class="w-[30rem]">
+					</canvas>
 				</div>
-				<div class="w-[500px] h-[100px] bg-red-300"></div>
+				<div class="md:mx-[120px] mx-[60px] shadow-lg px-7 py-1 md:px-3">
+					<div class="mx-9 text-[70px] text-[#42B6C5]">
+						<i class="fa fa-plus" aria-hidden="true "></i>
+					</div>
+					<p class="text-[25px] font-serif text-white">Create Course</p>
+				</div>
 			</div>
 
 
-			<div class="p-4">
-				<div class=""></div>
+			<p class="font-bold text-center text-[30px] text-white">Courses</p>
+			<div class="p-4 my-4" >
+				<div class="grid grid-cols-4 items-center md:gap-[100px] py-6 px-2 gap-2 shadow-md rounded-sm">
+					<p class="text-white">BootStrap</p>
+					<p class="text-white"> <span class="font-bold text-white">Duration:</span> 3hrs</p>
+					<p class="text-white"> <span class="font-bold text-white">Students:</span> 500</p>
+					<button class="bg-blue-400 p-2 rounded-md hover:bg-[#42b6c5] transition">Edit</button>
+				</div>
 			</div>
+			<div class="p-4 my-4" >
+				<div class="grid grid-cols-4 items-center md:gap-[100px] py-6 px-2 gap-2 shadow-md rounded-sm">
+					<p class="text-white">BootStrap</p>
+					<p class="text-white"> <span class="font-bold text-white">Duration:</span> 3hrs</p>
+					<p class="text-white"> <span class="font-bold text-white">Students:</span> 500</p>
+					<button class="bg-blue-400 p-2 rounded-md hover:bg-[#42b6c5] transition">Edit</button>
+				</div>
+			</div>
+			<div class="p-4 my-4" >
+				<div class="grid grid-cols-4 items-center md:gap-[100px] py-6 px-2 gap-2 shadow-md rounded-sm">
+					<p class="text-white">BootStrap</p>
+					<p class="text-white"> <span class="font-bold text-white">Duration:</span> 3hrs</p>
+					<p class="text-white"> <span class="font-bold text-white">Students:</span> 500</p>
+					<button class="bg-blue-400 p-2 rounded-md hover:bg-[#42b6c5] transition">Edit</button>
+				</div>
+			</div>
+			
 		</div>
 		
 	</section>
@@ -98,18 +129,18 @@
 				labels: labels,
 				datasets: [
 					{
-						label: 'My First Dataset',
+						label: 'Boostrap',
 						data: [65, 59, 80, 81, 56, 55],
-						fill: false,
-						borderColor: 'rgb(75, 192, 192)',
+						fill: true,
+						borderColor: 'rgb(60, 102, 10n2)',
 						tension: 0.1
 					},
 
 					{
-						label: 'My First Dataset',
+						label: 'REACT JS',
 						data: [45, 29, 88, 81, 16, 15],
-						fill: false,
-						borderColor: 'rgb(34, 172, 192)',
+						fill: true,
+						borderColor: 'rgb(34, 72, 192)',
 						tension: 0.1
 					}
 				]
