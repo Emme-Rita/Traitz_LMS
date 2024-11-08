@@ -1,13 +1,10 @@
 const menu = document.getElementById("menu")
 const hamburger = document.querySelector(".fa-bars")
-
-function onToggleMenu(e){
-    e.name = e.name === hamburger ? "fa-times" : hamburger
-}
 hamburger.addEventListener("click",() =>{
     menu.classList.toggle("active")
     if (active){
         hamburger.classList.replace("fa-bars","fa-times")
+
     }
 })
 
@@ -29,7 +26,7 @@ visibility.addEventListener("click", () =>{
 
 //   count down timer
 
-var countdowndate = new Date("Nov 20, 2024 00:00:00").getTime()
+var countdowndate = new Date("Nov 10, 2024 00:00:00").getTime()
 var x = setInterval(function(){
     var now = new Date().getTime()
     var distance = countdowndate - now
@@ -50,4 +47,4 @@ var x = setInterval(function(){
     document.getElementById("minute").innerHTML = minutes
     document.getElementById("second").innerHTML = seconds
 
-},)
+}, 1000)
