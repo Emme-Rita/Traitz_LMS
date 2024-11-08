@@ -19,13 +19,12 @@
             align-items: self-start;
             position: absolute;
             padding:10px;
-            gap: 10px;
+            gap: 30px;
             top: 80px;
             left: 0;
             width: 40%;
             height: 90vh;
             background: white;
-            /* border-radius: 15px; */
         }
     }
     @media(min-width:768px){
@@ -39,7 +38,7 @@
 
     <nav  class="bg-white flex justify-between px-4 border-b border-gray-300 shadow-2xl">
         <div class="flex flex-row justify-center items-center">
-            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i onclick="onToggleMenu(this)" class="fa fa-bars" aria-hidden="false"></i>
             <div>
                 <ul class="hidden md:flex md:gap-8 md:justify-center md:items-center">
                     <li><a id="active" class="text-xl hover:text-[#42B6C5]" href="index.html">Home</a></li>
@@ -51,10 +50,11 @@
             <!-- <img class="w-6" src="WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt=""> -->
              
                 <ul id="menu" class=" hidden md:hidden ">
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="index.html">Home</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="courses.html" >Courses</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="instructor.html"> Tutor Dashboard</a></li>
                     <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html">Sign up</a></li>
-                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="login.html">Log in</a></li>
-                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="courses.html">Courses</a></li>
-                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="signup.html" href="instructor.html"> Tutor Dashboard</a></li>
+                    <li><a class="text-xl hover:text-[#42B6C5] my-3" href="login.html" >Log in</a></li>
                 </ul>
              
              
@@ -64,7 +64,7 @@
             <!-- <p class="text-center font-bold">Traitz Tech</p> -->
         </div>
         <div class="flex gap-3">
-            <svg class="w-4 md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            
     
                 <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
                 <div class=""></div>

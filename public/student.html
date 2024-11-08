@@ -11,18 +11,12 @@
 <style>
     @media(max-width:768px) {        
        .active{
-           /* display: flex; */
-           /* flex-direction: column; */
-           /* align-items: self-start; */
            position: absolute;
-           /* gap: 10px; */
            display: block;
            top: 72px;
            left: 0;
            width: 50%;
            height: 100vh;
-           /* background: white; */
-           /* padding: 5px; */
        }
        .menu.active:nth-child(even){
            background: rgb(160, 160, 160);
@@ -36,21 +30,17 @@
 </style>
 <body>
     <nav class="flex justify-between items-center px-3 py-1 border-gray-300 shadow-2xl" >
-       <img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt="">
-       <div class="relative">
-        <input class="border bg-slate-50 rounded-3xl p-2 " type="text" placeholder="search">
-          <i class="fa fa-search absolute right-[40px] top-3 md:right-[25px]" aria-hidden="true"></i>
-       </div> 
+        <i class="fa fa-bars md:hidden" aria-hidden="false"></i>
+        <p class=" hidden md:block font-serif text-[25px] text-[#42B6C5]">Menu</p>
+       <img class="h-16" src="images/WhatsApp Image 2024-09-13 at 22.20.04_4feee3e7.jpg" alt=""> 
        <div>
             <img class="w-8 rounded-full" src="images/avatar.webp" alt="">
         </div>
-    <i class="fa fa-bars md:hidden" aria-hidden="false"></i>
     </nav>
     <!-- main -->
     <section class="flex h-[100vh] ">
         <!-- menu -->
         <section id="menu" class="hidden md:block w-[20%] pl-4 bg-white  border-gray-300 shadow-2xl overflow-scroll">
-            <p>menu</p>
             <div class="flex gap-2 py-3 ">
                 <img class="w-5 " src="images/home.webp" alt="">
                 <p><a href="index.html">Home</a></p>
@@ -106,35 +96,43 @@
                         </div>                    
                     </div>
                     <div class=" rounded-md bg-slate-300">
-                        <!-- <video class="h-[180px] w-[100%]" controls> <source src = "vidoes/Build_A_Responsive_Multipage_Education_School_Website_using_HTML_CSS___JavaScript_Complete_Tutorial(720p).mp4" type="video/mp4"></video>  -->
                         <img class="rounded-lg" src="images/image.png" alt="">
                         <div class="p-3">
                             <h3 class="text-start font-bold text-[20px] my-1">Responsive Multipage website</h3>
-                            <!-- <p class="my-2 "> <span class="font-semibold">Instructor:</span>Foryoung Junoir</p> -->
                             <p class="my-2 "><span class="font-semibold">duration:</span>22h 30mins</p> 
                             <button class="bg-[#30B8C6] p-1 rounded-md"><a class="text-white" href="coursedetals.html">Get started</a></button>  
                         </div>                    
                     </div>
                     <div class=" rounded-md  bg-slate-300">
-                        <!-- <video class="h-[180px] w-[100%]" controls> <source src = "vidoes/Build_A_Responsive_Multipage_Education_School_Website_using_HTML_CSS___JavaScript_Complete_Tutorial(720p).mp4" type="video/mp4"></video>  -->
                         <img class="rounded-lg" src="images/image.png" alt="">
                         <div class="p-3">
                             <h3 class="text-start font-bold text-[19px] my-1">Responsive Multipage website</h3>
-                            <!-- <p class="my-2 "> <span class="font-semibold">Instructor:</span>Foryoung Junoir</p> -->
                             <p class="my-2 "><span class="font-semibold">duration:</span>22h 30mins</p> 
                             <button class="bg-[#30B8C6] p-1 rounded-md"><a class="text-white" href="coursedetals.html">Get started</a></button>  
                         </div>                    
                     </div>     
                 </div>
+
+
+                <!-- timer -->
+                <div>
+                    <h4 class="text-white text-[25px] font-bold font-serif text-center my-2">Discount ends in</h4>
+                    <div class="time flex gap-8 justify-center my-5">
+                        <p id="hour" class="text-[80px] font-sans font-bold text-white">15h</p>
+                        <p id="minute" class="text-[80px] font-sans font-bold text-[#30B8C6]">33m</p>
+                        <span id="second" class="text-[80px] font-sans font-bold text-white">43s</span>
+                    </div>
+                </div>
+
                 <section>
                     <h1 class="font-bold text-white text-4xl ml-[10%] mb-7 text-center">Related Search</h1>
                     <div class="flex justify-between items-center mx-[12%] my-2">
                         <h2  class="font-bold text-white text-xl " >Our top picks for you</h2>
-                        <button><a class=" text-white bg-orange-700 hover:text-blue-600 p-2" href="courses.html">Browse Courses</a></button>
+                        <button><a class="hidden md:block text-white bg-orange-700 hover:text-blue-600 p-2" href="courses.html">Browse Courses</a></button>
                     </div>
             
                     <div >
-                        <div class="flex flex-col md:flex-row gap-5 mx-[12%]  bg-slate-300 my-5 rounded-lg">
+                        <div class="flex flex-col md:flex-row gap-5 mx-[12%]  bg-slate-300 my-5 rounded-lg ">
                             <!-- <video class="h-[200px]" controls><source src="vidoes/Learn_JavaScript_-_Full_Course_for_Beginners(480p).mp4" type="video/mp4"></video> -->
                             <img class="rounded-lg h-[200px] w-[300px]" src="images/image.png" alt="">
                             <div class="p-2">
@@ -142,7 +140,7 @@
                                 <P>By: Brandon Smith</P>
                                 <!-- <p>updated: sept 2024 time: 3h 45mins</p> -->
                                 <p class="font-bold ">Price $8.7</p>
-                                <button class="py-1 px-4 font-bold bg-[#42B6C5] text-xl rounded-md">Add To Cart</button>
+                                <button class="py-1 px-4 font-bold bg-[#42B6C5] text-xl rounded-md mt-7">Add To Cart</button>
             
                             </div>
                         </div>
@@ -154,19 +152,12 @@
                                 <P>By: Brandon Smith</P>
                                 <!-- <p>updated: sept 2024 time: 3h 45mins</p> -->
                                 <p class="font-bold ">Price $8.7</p>
-                                <button class="py-1 font-bold px-4 bg-[#42B6C5] text-xl rounded-md">Add To Cart</button>
+                                <button class="py-1 font-bold px-4 bg-[#42B6C5] text-xl rounded-md mt-7">Add To Cart</button>
             
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <!-- <div>
-                    <h2 class="font-bold text-white" >Progress Chart</h2>
-                    <div>
-                        <canvas id="myChart" class="h-[400px] w-[300px]"></canvas>
-                    </div>                      
-                </div> -->
         
                 <div class="bg-white p-5 rounded-md mx-5">
                    <h2 class="font-bold">Recently Accessed</h2>

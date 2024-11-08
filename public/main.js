@@ -1,6 +1,9 @@
 const menu = document.getElementById("menu")
 const hamburger = document.querySelector(".fa-bars")
 
+function onToggleMenu(e){
+    e.name = e.name === hamburger ? "fa-times" : hamburger
+}
 hamburger.addEventListener("click",() =>{
     menu.classList.toggle("active")
     if (active){
@@ -24,34 +27,27 @@ visibility.addEventListener("click", () =>{
     }
 })
 
-// const ctx = document.getElementById('myChart');
+//   count down timer
 
-//   new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: ['HTML', 'CSS', 'JS', 'REACT', 'VUE JS', 'GitHub'],
-//       datasets: [{
-//         label: '# of Votes',
-//         data: [12, 19, 3, 5, 2, 3],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         y: {
-//           beginAtZero: true
-//         }
-//       }
-//     }
-//   });
+var countdowndate = new Date("Nov 20, 2024 00:00:00").getTime()
+var x = setInterval(function(){
+    var now = new Date().getTime()
+    var distance = countdowndate - now
 
 
-// // upload video
+    var hours = (Math.floor(distance / (1000 * 60 * 60)) + "h")
+    if(hours < 10){ hours = "0" + hours}
 
-//   document.getElementById("input").addEventListener("change", function(){
-//     var media = URL.createObjectURL(this.files[0]);
-//     var video = document.getElementById("video");
-//     video.src = media
-//     video.style.display = "block";
-//     video.play();
-//   });
+
+    var minutes = (Math.floor((distance % (1000 *60 * 60)) / (1000 * 60)) + "m")
+    if(minutes < 10){ minutes = "0" + minutes}
+
+
+    var seconds = (Math.floor((distance % (1000 * 60) / 1000 )) + "s")
+    if(seconds < 10){ seconds = "0" + seconds}
+
+    document.getElementById("hour").innerHTML = hours
+    document.getElementById("minute").innerHTML = minutes
+    document.getElementById("second").innerHTML = seconds
+
+},)
