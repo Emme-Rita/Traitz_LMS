@@ -1180,6 +1180,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1402,6 +1406,10 @@ video {
 
   .md\:text-\[70px\] {
     font-size: 70px;
+  }
+
+  .md\:text-\[80px\] {
+    font-size: 80px;
   }
 
   .md\:shadow-2xl {
